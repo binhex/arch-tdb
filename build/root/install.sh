@@ -39,7 +39,7 @@ source /root/aur.sh
 ####
 
 # download tdb
-/root/github.sh -df "github-download.zip" -dp "/tmp" -ep "/tmp/extracted" -ip "/usr/lib/tdb" -go "binhex" -gr "trigger-docker-build" -rt "source"
+/root/github.sh -df "github-download.zip" -dp "/tmp" -ep "/tmp/extracted" -ip "/usr/lib/tdb" -go "binhex" -gr "trigger-docker-build" -rt "source" -dr "false" -db "master"
 
 # container perms
 ####
