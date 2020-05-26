@@ -16,6 +16,7 @@ docker run -d \
     --name=<container name> \
     -v <path for config files>:/config \
     -v /etc/localtime:/etc/localtime:ro \
+    -v <path to hosts docker socket>:/var/run/docker.sock \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
@@ -35,6 +36,7 @@ docker run -d \
     --name=tdb \
     -v /apps/docker/tdb:/config \
     -v /etc/localtime:/etc/localtime:ro \
+    -v /var/run/docker.sock:/var/run/docker.sock \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \

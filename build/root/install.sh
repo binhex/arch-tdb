@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="python2"
+pacman_packages="python2 docker"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
