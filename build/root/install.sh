@@ -55,7 +55,7 @@ source aur.sh
 ####
 
 # download tdb
-github.sh -df "github-download.zip" -dp "/tmp" -ep "/tmp/extracted" -ip "/usr/lib/tdb" -go "binhex" -gr "trigger-docker-build" -rt "source" -dr "false" -db "master"
+github.sh --install-path "/usr/lib/tdb" --github-owner "binhex" --github-repo "trigger-docker-build" --query-type "branch" --download-branch "master"
 
 # container perms
 ####
